@@ -1,0 +1,169 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.hero-location {
+  font-size: 1rem;
+  color: gray;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.highlight {
+  color: cyan;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  padding: 12px 24px;
+  border: 2px solid #3333ff;
+  background: transparent;
+  color: #3333ff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.founder-box {
+  padding-top: 20px;
+}
+
+.founder-label {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.founder-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.founder-info {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.hero-3d {
+  height: 400px;
+  position: relative;
+}
+
+.floating-dot {
+  position: absolute;
+  border-radius: 50%;
+  animation: float 3s infinite ease-in-out;
+}
+
+.dot1 {
+  top: 20px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background: cyan;
+}
+
+.dot2 {
+  bottom: 50px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  background: purple;
+  animation-delay: 2s;
+}
+
+.dot3 {
+  top: 50%;
+  right: 60px;
+  width: 12px;
+  height: 12px;
+  background: yellow;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-frame {
+  width: 24px;
+  height: 40px;
+  border: 2px solid #3333ff;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-dot {
+  width: 4px;
+  height: 8px;
+  background: #3333ff;
+  border-radius: 2px;
+  margin-top: 4px;
+}
